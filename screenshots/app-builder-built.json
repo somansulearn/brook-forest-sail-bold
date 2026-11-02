@@ -1,0 +1,40 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Samriddhi Workshop OS",
+      "hasCanvas": false,
+      "bodyTextLen": 372,
+      "bodyTextHash": "7453bf7f070df19a13f88c6835f963f31feda6f89e6982647e2b980a99dbf5d6",
+      "bodyTextPrefix": "SAW Samriddhi Auto Works WORKSHOP OS Home Stock Customers Bill H",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Samriddhi Workshop OS",
+      "hasCanvas": false,
+      "bodyTextLen": 339,
+      "bodyTextHash": "51ee17e6285a9b078de25678db8ed6ee8fa64d687d1535b3c8063620960d2df0",
+      "bodyTextPrefix": "SAW Home Stock Customers Bill History Day-end Settings SAW LOCAL",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": true,
+  "baselineReasons": [
+    "mobile: body text changed (559 -> 339 chars, hash mismatch)"
+  ]
+}

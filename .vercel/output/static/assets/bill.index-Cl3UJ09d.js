@@ -1,0 +1,1 @@
+import{o as e}from"./useStore-DdQU-Mif.js";import{t}from"./bill-editor-DrOupYeD.js";import{a as n}from"./index-CybcjkUm.js";var r=e();function i(){let{phone:e}=n.useSearch();return(0,r.jsx)(t,{initialPhone:e})}export{i as component};

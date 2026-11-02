@@ -1,0 +1,1 @@
+import{o as e}from"./useStore-DdQU-Mif.js";import{d as t}from"./index-CybcjkUm.js";var n=e();function r(){return(0,n.jsx)(t,{})}export{r as component};

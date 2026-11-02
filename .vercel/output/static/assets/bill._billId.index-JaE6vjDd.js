@@ -1,0 +1,1 @@
+import{o as e}from"./useStore-DdQU-Mif.js";import{t}from"./bill-editor-DrOupYeD.js";import{n}from"./index-CybcjkUm.js";var r=e();function i(){let{billId:e}=n.useParams();return(0,r.jsx)(t,{billId:e})}export{i as component};

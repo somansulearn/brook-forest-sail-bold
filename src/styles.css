@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Segoe UI", "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "Cascadia Mono", "IBM Plex Mono", ui-monospace, Consolas, monospace;
+
+  --color-bg: #efeae1;
+  --color-bg-elevated: #f7f3ec;
+  --color-surface: #fffcf7;
+  --color-fg: #1a1814;
+  --color-muted: #6b6459;
+  --color-subtle: #8a8276;
+  --color-primary: #1e4d4a;
+  --color-primary-fg: #f4f1eb;
+  --color-primary-hover: #163d3b;
+  --color-accent: #1e4d4a;
+  --color-border: #d4cbba;
+  --color-border-strong: #b7ad9a;
+  --color-ring: #1e4d4a;
+  --color-danger: #9b3a2f;
+  --color-danger-fg: #fff8f6;
+  --color-warn: #8a5a22;
+  --color-ok: #2f5d44;
+  --color-chip: #e7dfd2;
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius: 0.5rem;
+
+  --shadow-border:
+    0px 0px 0px 1px rgba(26, 24, 20, 0.06),
+    0px 1px 2px -1px rgba(26, 24, 20, 0.06),
+    0px 2px 8px 0px rgba(26, 24, 20, 0.04);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+    letter-spacing: -0.02em;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .print-sheet {
+    box-shadow: none !important;
+    border: none !important;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
